@@ -37,18 +37,6 @@ func RGB_RED() RGB {
 }
 
 
-/**
-		**TESTING**
-*/
-func main() {
-	mrgb := RGB_RED()
-	mrgb.PrintValues()
-
-	mhsl := RGBtoHSL( mrgb )
-	mhsl.PrintValues()
-}
-
-
 func RGBtoHSL( rgb RGB ) HSL {
 
 	r := rgb.R / 256.0
