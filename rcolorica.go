@@ -37,7 +37,7 @@ func RGB_RED() RGB {
 }
 
 
-func RGBtoHSL( rgb RGB ) HSL {
+func ( rgb *RGB ) ToHSL() HSL {
 
 	r := rgb.R / 256.0
 	g := rgb.G / 256.0
@@ -81,7 +81,7 @@ func RGBtoHSL( rgb RGB ) HSL {
 }
 
 
-func HSltoRGB( hsl HSL ) RGB {
+func ( hsl *HSL ) ToRGB() RGB {
 
 	var r, g, b float64
 	var temp1, temp2, tempr, tempg, tempb float64
